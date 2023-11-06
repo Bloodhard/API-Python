@@ -10,10 +10,11 @@
 # 4. Quais recusrsos - Livros
 
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 from db import livros
 
 app = Flask(__name__)
-
+CORS(app)
 
 
 #Consultar(todos)
